@@ -1,6 +1,7 @@
 nome = input('Digite o nome do aluno: ')
 disciplina = input('Digite o nome da disciplina: ')
 nota = float(input('Digite a nota do aluno: '))
+status = 0
 
 if nota < 0 or nota > 10:
     print('Nota inválida')
@@ -12,4 +13,4 @@ else:
             status = ('reprovado')
         else:
             status = ('aprovado')
-        print(f'{nome} está {status} em {disciplina} com nota {nota}')
+print(f'{nome} está {status} em {disciplina} com nota {nota}')
