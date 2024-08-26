@@ -11,38 +11,46 @@ while True:
             ''')
     n = int(input('Operação: '))
     if n == 1:
-        print('SOMA')
+        print('''
+              SOMA
+              ''')
         n1 = float(input('Digite um número: '))
         n2 = float(input('Digite outro número: '))
         print(f'{n1} + {n2} = {n1 + n2}')
     elif  n == 2:
-        print('SUBTRAÇÃO')
+        print('''
+              SUBTRAÇÃO
+              ''')
         n1 = float(input('Digite um número: '))
         n2 = float(input('Digite outro número: '))
         print(f'{n1} - {n2} = {n1 - n2}')
     elif n == 3:
-        print('MULTIPLICAÇÃO')
+        print('''
+              MULTIPLICAÇÃO
+              ''')
         n1 = float(input('Digite um número: '))
         n2 = float(input('Digite outro número: '))
         print(f'{n1} x {n2} = {n1 * n2}')
     elif n == 4:
-        print('DIVISÃO')
+        print('''
+              DIVISÃO
+              ''')
         n1 = float(input('Digite um número: '))
         n2 = float(input('Digite outro número: '))
         print(f'{n1} : {n2} = {n1 / n2}')
     elif n == 5:
-        print('POTÊNCIA DE DOIS')
+        print('''
+              POTÊNCIA DE DOIS
+              ''')
         n1 = float(input('Digite um número: '))
         print(f'{n1}^2 = {n1 * n1}')
     else:
         if n == 0:
             break
         else:
-            print('Número inválido, tente novamente.')
+            print('''
+                  Número inválido, tente novamente.''')
     continuar = int(input('''
-                Deseja continuar?
-                      SIM - 1
-                      NÃO - 0
+                Digite qualquer tecla para continuar.
+                    
                       '''))
-    if continuar == 0:
-        break
